@@ -41,7 +41,7 @@ df %>%
   ggplot() +
   geom_point(aes(x = BA, y = RS))
 
-baseballT = t.test(df$BA,alternative = 'greater',mu=0.250)
+baseballT = t.test(df$BA, alternative = 'greater', mu=0.250)
 # null hypothesis: true mean BA is 0.250
 # alternative hyp: true mean BA is greater than 0.250
 baseballT
